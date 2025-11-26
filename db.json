@@ -33,13 +33,13 @@
       "name": "Buku Calculus Purcel",
       "owner": "Sis Jessica",
       "location": "Annex 05",
-      "isAvailable": false
+      "isAvailable": true
     },
     {
       "name": "strika",
       "owner": "kezi",
       "location": "Jasmine",
-      "isAvailable": true,
+      "isAvailable": false,
       "id": "sUwx4X9"
     }
   ]
