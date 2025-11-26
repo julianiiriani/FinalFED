@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "name": "Setrika Philips",
+      "owner": "Bro David",
+      "location": "Crystal A-104",
+      "isAvailable": true
+    },
+    {
+      "id": "2",
+      "name": "Kabel Roll 5M",
+      "owner": "Bro Kevin",
+      "location": "Gennaro B-20",
+      "isAvailable": false
+    },
+    {
+      "id": "3",
+      "name": "Gitar Akustik Yamaha",
+      "owner": "Bro Michael",
+      "location": "Edelweiss C-12",
+      "isAvailable": true
+    },
+    {
+      "id": "4",
+      "name": "Pompa Galon Elektrik",
+      "owner": "Sis Sarah",
+      "location": "Jasmine 101",
+      "isAvailable": true
+    },
+    {
+      "id": "5",
+      "name": "Buku Calculus Purcel",
+      "owner": "Sis Jessica",
+      "location": "Annex 05",
+      "isAvailable": false
+    }
+  ]
+}
