@@ -34,6 +34,13 @@
       "owner": "Sis Jessica",
       "location": "Annex 05",
       "isAvailable": false
+    },
+    {
+      "name": "strika",
+      "owner": "kezi",
+      "location": "Jasmine",
+      "isAvailable": true,
+      "id": "sUwx4X9"
     }
   ]
 }
