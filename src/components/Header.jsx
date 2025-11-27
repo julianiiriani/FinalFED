@@ -8,12 +8,11 @@ const Header = () => {
         {/* Bagian Kiri: Logo & Judul */}
         <div className="flex items-center gap-2">
           <span className="text-2xl" role="img" aria-label="handshake">🤝</span>
-          <h1 className="text-xl md:text-2xl font-bold tracking-wider">Pinjam Dulu</h1>
+          <h1 className="text-xl md:text-2xl font-bold tracking-wider">PinjamBarang</h1>
         </div>
         
-        {/* Bagian Kanan: Badge/Label Kecil */}
         <span className="text-xs md:text-sm bg-indigo-700 px-3 py-1 rounded-full font-medium border border-indigo-500 shadow-sm">
-          Unklab Asrama Edition
+          Asrama UNKLAB
         </span>
       </div>
     </header>

@@ -4,43 +4,50 @@
       "id": "1",
       "name": "Setrika Philips",
       "owner": "Bro David",
-      "location": "Crystal A-104",
+      "location": "Crystal A-101",
       "isAvailable": true
     },
     {
       "id": "2",
       "name": "Kabel Roll 5M",
       "owner": "Bro Kevin",
-      "location": "Gennaro B-20",
+      "location": "Guest House 102",
       "isAvailable": false
     },
     {
       "id": "3",
-      "name": "Gitar Akustik Yamaha",
+      "name": "Gitar Akustik",
       "owner": "Bro Michael",
-      "location": "Edelweiss C-12",
+      "location": "Crystal103",
       "isAvailable": true
     },
     {
       "id": "4",
       "name": "Pompa Galon Elektrik",
       "owner": "Sis Sarah",
-      "location": "Jasmine 101",
+      "location": "Jasmine 104",
       "isAvailable": true
     },
     {
       "id": "5",
       "name": "Buku Calculus Purcel",
       "owner": "Sis Jessica",
-      "location": "Annex 05",
+      "location": "Annex 105",
       "isAvailable": true
     },
     {
-      "name": "strika",
+      "name": "Setrika Philips",
       "owner": "kezi",
-      "location": "Jasmine",
+      "location": "Jasmine 106",
       "isAvailable": false,
       "id": "sUwx4X9"
+    },
+    {
+      "name": "Catokan Rambut",
+      "owner": "Julia",
+      "location": "Jasmine",
+      "isAvailable": true,
+      "id": "1764184101141"
     }
   ]
 }

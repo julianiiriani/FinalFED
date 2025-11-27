@@ -11,21 +11,16 @@ const ItemCard = ({ item, onDelete, onToggleStatus, onEdit }) => {
 
   return (
     <div className="bg-white p-5 rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-100 flex flex-col justify-between h-full group">
-      
-      {/* --- BAGIAN ATAS: Informasi Barang --- */}
       <div>
-        {/* Header Kartu: Nama & Status */}
         <div className="flex justify-between items-start gap-2 mb-3">
             <h3 className="font-bold text-lg text-gray-900 leading-tight group-hover:text-indigo-700 transition-colors">
               {item.name}
             </h3>
-            {/* Badge Status (Warnanya dinamis) */}
             <span className={`text-[11px] px-2.5 py-1 rounded-full font-bold uppercase tracking-wider whitespace-nowrap ${statusBadgeColor}`}>
                 {statusText}
             </span>
         </div>
         
-        {/* Detail: Pemilik & Lokasi */}
         <div className="text-sm text-gray-600 space-y-2 mb-6 bg-gray-50 p-3 rounded-lg">
             <p className="flex items-center gap-2">
                 <span className="text-lg">👤</span> 
@@ -38,7 +33,6 @@ const ItemCard = ({ item, onDelete, onToggleStatus, onEdit }) => {
         </div>
       </div>
 
-      {/* --- BAGIAN BAWAH: Tombol Aksi --- */}
       <div className="grid grid-cols-5 gap-2 mt-auto">
         {/* Tombol Aksi Utama (Pinjam/Kembalikan) - Warna dinamis */}
         <button 
@@ -49,15 +43,12 @@ const ItemCard = ({ item, onDelete, onToggleStatus, onEdit }) => {
           {actionBtnText}
         </button>
 
-        {/* Tombol Edit (Selalu Kuning) */}
         <button
           onClick={() => onEdit(item)}
           className="col-span-1 py-2.5 px-3 rounded-lg text-xs sm:text-sm font-bold text-yellow-700 bg-yellow-50 hover:bg-yellow-100 transition-colors border border-yellow-200 shadow-sm flex items-center justify-center gap-1 active:scale-95"
         >
           <span>✏️</span> Edit
         </button>
-
-        {/* Tombol Hapus (Selalu Merah) */}
         <button 
           onClick={() => onDelete(item.id)}
           className="col-span-1 md:col-span-2 py-2.5 px-3 rounded-lg text-xs sm:text-sm font-bold text-red-600 bg-red-50 hover:bg-red-100 transition-colors border border-red-200 shadow-sm flex items-center justify-center gap-1 active:scale-95"

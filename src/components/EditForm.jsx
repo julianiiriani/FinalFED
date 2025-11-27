@@ -1,18 +1,38 @@
 import React, { useState, useEffect } from 'react';
 
 const EditForm = ({ defaultData, onUpdate, onCancel }) => {
-  const [formData, setFormData] = useState({ id: '', name: '', owner: '', location: '', isAvailable: true });
+  const [formData, setFormData] = useState({ 
+    id: '', 
+    name: '', 
+    owner: '', 
+    location: '', 
+    isAvailable: true 
+  });
 
   useEffect(() => {
-    if (defaultData) setFormData(defaultData);
+    if (defaultData) { 
+      setFormData(defaultData);
+    }
   }, [defaultData]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.name.trim() || !formData.owner.trim() || !formData.location) {
-      return alert('Mohon lengkapi data sebelum menyimpan.');
+      alert('Mohon lengkapi data sebelum menyimpan.');
+      return;
     }
     onUpdate(formData);
+  };
+
+  const handleCancelEdit = () => {
+    setFormData({
+      id: '',
+      name: '',
+      owner: '',
+      location: '',
+      isAvailable: true
+    });
+    if (onCancel) { onCancel(); }
   };
 
   return (
@@ -33,7 +53,7 @@ const EditForm = ({ defaultData, onUpdate, onCancel }) => {
             type="text"
             value={formData.owner}
             onChange={(e) => setFormData({ ...formData, owner: e.target.value })}
-            placeholder="Pemilik"
+            placeholder="Pemilik Barang"
             className="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
           />
         </div>
@@ -56,11 +76,11 @@ const EditForm = ({ defaultData, onUpdate, onCancel }) => {
             <span className="text-sm">Tersedia (available)</span>
           </label>
           <div className="flex gap-2"/>
-          <button
-            type="submit"
-            className="w-full bg-green-600 text-white font-bold py-3 rounded-lg hover:bg-green-700"
-          >
-            Simpan
+            <button
+              type="submit"
+              className="w-full bg-green-600 text-white font-bold py-3 rounded-lg hover:bg-green-700"
+            >
+              Simpan
           </button>
           <button
             type="button"
